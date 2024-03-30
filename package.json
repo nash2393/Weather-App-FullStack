@@ -1,5 +1,5 @@
 {
-  "name": "weather",
+  "name": "WeatherAppFullstack",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -7,23 +7,29 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pekkiriscim/weather.git"
+    "url": "https://github.com/nash2393/Weather-App-FullStack"
   },
-  "author": "Mustafa Pekkirişci",
+  "author": "Nishant Parihar",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pekkiriscim/weather/issues"
+    "url": "https://github.com/nash2393/Weather-App-FullStack/issues"
   },
-  "homepage": "https://github.com/pekkiriscim/weather#readme",
+  "homepage": "https://github.com/nash2393/Weather-App-FullStack/blob/feature/new/README.md",
   "devDependencies": {
     "autoprefixer": "^10.4.14",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
     "sass": "^1.59.2",
     "vite": "^4.1.0",
     "vite-plugin-static-copy": "^0.13.1"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
   },
   "browserslist": [
     "> 0%"

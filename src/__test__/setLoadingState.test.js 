@@ -1,0 +1,21 @@
+import { startLoadingState, endLoadingState } from '../setLoadingState';
+
+describe('setLoadingState functions', () => {
+  // Set up our document body
+  document.body.innerHTML = `
+    <div class="dynamic-data"></div>
+    <input class="search-box-input" />
+  `;
+
+  const dynamicData = document.querySelector('.dynamic-data');
+
+  test('startLoadingState adds loading class', () => {
+    startLoadingState();
+    expect(dynamicData.classList.contains('loading')).toBe(true);
+  });
+
+  test('endLoadingState removes loading class', () => {
+    endLoadingState();
+    expect(dynamicData.classList.contains('loading')).toBe(false);
+  });
+});
